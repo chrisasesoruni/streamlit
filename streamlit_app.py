@@ -2,7 +2,7 @@
 import pandas as pd
 import streamlit as st
 
-df = pd.read_csv("https://www.datosabiertos.gob.pe/sites/default/files/Monitoreo_julio.xlsx")  # read a CSV file inside the 'data" folder next to 'app.py'
+df = pd.read_csv("https://www.datosabiertos.gob.pe/sites/default/files/Monitoreo_julio.xlsx", encoding= 'unicode_escape')  # read a CSV file inside the 'data" folder next to 'app.py'
 # df = pd.read_excel(...)  # will work for Excel files
 
 st.title("Hello world!")  # add a title
