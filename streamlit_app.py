@@ -9,6 +9,6 @@ df_miraflores= pd.read_excel(r'https://www.datosabiertos.gob.pe/sites/default/fi
 # df = pd.read_excel(...)  # will work for Excel files
 
 st.title("Tabla Bonilla")  # add a title
-st.write(df_bonilla)  # visualize my dataframe in the Streamlit app
+st.write(df_bonilla[:,6,14].hist())  # visualize my dataframe in the Streamlit app
 st.title("Tabla Miraflores")  # add a title
 st.write(df_miraflores)  # visualize my dataframe in the Streamlit app
