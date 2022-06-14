@@ -12,7 +12,7 @@ df_miraflores= pd.read_excel(r'https://www.datosabiertos.gob.pe/sites/default/fi
 # df = pd.read_excel(...)  # will work for Excel files
 
 st.title("Tabla Bonilla")  # add a title
-st.write(df_miraflores.dtypes)
+st.write(df_miraflores.dtypes.astype(str))
 #df_bonilla.iloc[:, 6:14].hist()
 #st.line_chart(df_bonilla.iloc[:, 6],df_miraflores.iloc[:, 6])
 #plt.show()
