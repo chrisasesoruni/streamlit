@@ -4,8 +4,11 @@ import streamlit as st
 import pip
 pip.main(["install", "openpyxl"])
 
-df = pd.read_excel(r'https://www.datosabiertos.gob.pe/sites/default/files/Monitoreo_julio.xlsx', header= 0)  # read a CSV file inside the 'data" folder next to 'app.py'
+df_bonilla = pd.read_excel(r'https://www.datosabiertos.gob.pe/sites/default/files/Monitoreo_setiembre_Bonilla.xlsx', header= 0) 
+df_miraflores= pd.read_excel(r'https://www.datosabiertos.gob.pe/sites/default/files/Monitoreo_setiembre_Ov.Miraflores.xlsx', header= 0) 
 # df = pd.read_excel(...)  # will work for Excel files
 
-st.title("Hello world!")  # add a title
-st.write(df)  # visualize my dataframe in the Streamlit app
+st.title("Tabla Bonilla")  # add a title
+st.write(df_bonilla)  # visualize my dataframe in the Streamlit app
+st.title("Tabla Miraflores")  # add a title
+st.write(df_miraflores)  # visualize my dataframe in the Streamlit app
