@@ -12,7 +12,7 @@ df_miraflores= pd.read_excel(r'https://www.datosabiertos.gob.pe/sites/default/fi
 # df = pd.read_excel(...)  # will work for Excel files
 
 st.title("Tabla Bonilla")  # add a title
-df_bonilla[:,6,14].hist()
+df_bonilla[:,6:14].hist()
 plt.show()
 st.pyplot()
 #st.write()  # visualize my dataframe in the Streamlit app
