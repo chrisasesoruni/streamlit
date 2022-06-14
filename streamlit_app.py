@@ -4,6 +4,7 @@ import streamlit as st
 import pip
 pip.main(["install", "openpyxl"])
 #import plotly.figure_factory as ff
+pip.main(["install", "matplotlib"])
 import matplotlib.pyplot as plt
 
 df_bonilla = pd.read_excel(r'https://www.datosabiertos.gob.pe/sites/default/files/Monitoreo_setiembre_Bonilla.xlsx', header= 0) 
