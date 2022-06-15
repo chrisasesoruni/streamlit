@@ -15,6 +15,8 @@ st.title("Tabla Bonilla")  # add a title
 st.write(df_miraflores.dtypes.astype(str))
 #df_bonilla.iloc[:, 6:14].hist()
 #st.line_chart(pd.concat([df_bonilla.iloc[:, 6],df_miraflores.iloc[:, 6]], axis = 1))
+st.write(df_bonilla.columns[6])
+st.write(df_bonilla.columns[6].dtypes.astype(str))
 st.write(pd.merge(df_bonilla.iloc[:, 6], df_miraflores.iloc[:, 6], on=df_bonilla.columns[6]))
 st.line_chart(pd.merge(df_bonilla.iloc[:, 6], df_miraflores.iloc[:, 6], on=df_bonilla.columns[6]))
 #plt.show()
